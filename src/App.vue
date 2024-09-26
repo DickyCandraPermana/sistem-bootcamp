@@ -4,6 +4,7 @@ import MainHeader from '@/components/LandingPageHeader.vue'
 import ContentKerjasama from '@/components/ContentKerjasama.vue'
 import LandingBlog from '@/components/LandingBlog.vue'
 import LandingAbout from '@/components/LandingAbout.vue'
+import LandingCeritaSukses from '@/components/LandingCeritaSukses.vue'
 
 </script>
 
@@ -14,5 +15,6 @@ import LandingAbout from '@/components/LandingAbout.vue'
     <ContentKerjasama />
     <LandingBlog />
     <LandingAbout />
+    <LandingCeritaSukses />
   </main>
 </template>
