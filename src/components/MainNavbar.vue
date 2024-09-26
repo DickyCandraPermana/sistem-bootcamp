@@ -7,10 +7,10 @@ import brand from '@/assets/img/brand.svg'
     <img :src="brand" alt="">
 
     <ul class="flex flex-row items-center justify-between font-inter text-slate-800">
-      <li class="mr-8 hover:text-slate-600"><a href="#">Blog</a></li>
-      <li class="mr-8 hover:text-slate-600"><a href="#">Home</a></li>
-      <li class="mr-8 hover:text-slate-600"><a href="#">About Us</a></li>
-      <li class="mr-8 hover:text-slate-600"><a href="#">Contact Us</a></li>
+      <li class="mr-8 text-blue-600"><a href="#">Home</a></li>
+      <li class="mr-8 hover:text-blue-600"><a href="#">Blog</a></li>
+      <li class="mr-8 hover:text-blue-600"><a href="#">About Us</a></li>
+      <li class="mr-8 hover:text-blue-600"><a href="#">Contact Us</a></li>
     </ul>
 
     <button

@@ -1,0 +1,57 @@
+<script setup>
+import logo from '@/assets/img/sistem_white.svg';
+import instagram from '@/assets/img/instagram_logo.svg';
+import phone_logo from '@/assets/img/phone.svg';
+import mail_logo from '@/assets/img/mail.svg';
+
+</script>
+
+<template>
+  <footer class="flex items-start justify-between w-full px-32 py-16 bg-blue-950">
+    <div class="flex flex-col w-1/3 gap-8">
+      <img :src="logo" alt="wtf" class="w-1/2 fill-white">
+
+      <div class="address">
+        <h5 class="text-xl font-semibold leading-relaxed font-inter text-slate-300">Jogja Office</h5>
+        <p class="text-base font-normal leading-relaxed font-inter text-slate-400">Jl. Kresna. Gamping kidul,
+          Amberketawang, Kec.Gamping, Kabupaten Sleman, DIY 55294</p>
+      </div>
+      <div class="address">
+        <h5 class="text-xl font-semibold leading-relaxed font-inter text-slate-300">Jakarta Office</h5>
+        <p class="text-base font-normal leading-relaxed font-inter text-slate-400">Cibis Nine Building Lantai 11 Jl. TB
+          Simatupang No.2, Jakarta Selatan</p>
+      </div>
+    </div>
+    <div class="flex flex-col w-1/5 gap-7">
+      <h5 class="text-xl font-semibold leading-relaxed text-white font-inter">Bootcamp</h5>
+      <ul class="flex flex-col gap-5 font-inter text-slate-400">
+        <li><a href="#">Devops</a></li>
+        <li><a href="#">Quality Assurance</a></li>
+        <li><a href="#">Full Stack Developer</a></li>
+        <li><a href="#">Project Manager</a></li>
+      </ul>
+    </div>
+    <div class="flex flex-col w-1/7 gap-7">
+      <h5 class="text-xl font-semibold leading-relaxed text-white font-inter">SISTEM</h5>
+      <ul class="flex flex-col gap-5 font-inter text-slate-400">
+        <li><a href="#">Tentang Kami</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="flex flex-col w-1/5 gap-7">
+      <h5 class="text-xl font-semibold leading-relaxed text-white font-inter">Ikuti kami</h5>
+      <div class="flex items-center justify-center w-8 h-8 p-1 border-2 border-blue-900 rounded-md">
+        <img :src="instagram" alt="Instagram Logo" class="size-[80%] fill-white">
+      </div>
+      <div class="flex gap-3">
+        <img :src="phone_logo" alt="lol" class="fill-green-600 stroke-green-600 size-6">
+        <a href="#" class="text-sm font-normal font-inter text-slate-400">+62 812 3456 7890</a>
+      </div>
+      <div class="flex gap-3">
+        <img :src="mail_logo" alt="lol" class="fill-green-600 stroke-green-600 size-6">
+        <a href="#" class="text-sm font-normal font-inter text-slate-400">dickycandrapermana@student.uns.ac.id</a>
+      </div>
+    </div>
+  </footer>
+</template>

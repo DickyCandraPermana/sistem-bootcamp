@@ -6,6 +6,7 @@ import LandingBlog from '@/components/LandingBlog.vue'
 import LandingAbout from '@/components/LandingAbout.vue'
 import LandingCeritaSukses from '@/components/LandingCeritaSukses.vue'
 import LandingJoinus from './components/LandingJoinus.vue'
+import LandingFooter from './components/LandingFooter.vue'
 
 </script>
 
@@ -19,4 +20,5 @@ import LandingJoinus from './components/LandingJoinus.vue'
     <LandingCeritaSukses />
     <LandingJoinus />
   </main>
+  <LandingFooter />
 </template>
