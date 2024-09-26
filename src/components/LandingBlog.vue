@@ -57,12 +57,12 @@ const events = ref([
 </script>
 
 <template>
-  <div class="flex flex-col w-full px-32 pt-16">
+  <div class="flex flex-col w-full px-32 pt-16 mt-5">
     <div class="">
-      <h1 class="mb-5 text-3xl font-semibold text-center font-montserrat">Berbagai Mitra Untuk Mendukung
+      <h1 class="text-3xl font-semibold text-center mb-7 font-montserrat">Berbagai Mitra Untuk Mendukung
         Ekosistem Digital SISTEM
       </h1>
-      <p class="mb-5 -mt-4 text-sm font-normal text-center font-inter text-slate-600 ">Cari berbagai macam event
+      <p class="mb-5 -mt-4 text-sm font-normal text-center font-inter text-slate-500 ">Cari berbagai macam event
         teknologi terbaik yang diadakan oleh komunitas dan di dukung oleh banyak perusahaan besar lainnya</p>
     </div>
 
