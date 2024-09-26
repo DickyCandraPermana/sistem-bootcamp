@@ -73,7 +73,7 @@ const events = ref([
           <img :src="event.url" :alt="event.title">
         </div>
         <div class="w-full p-5 text-slate-500">
-          <div class="card__caption__title">
+          <div class="">
             <h4 class="text-lg font-semibold leading-5 font-inter line-clamp-1 text-slate-800">{{ event.title }}</h4>
             <p class="mb-5 text-sm font-normal font-inter">{{ event.jenisKelas }} {{ event.durasi }}</p>
           </div>

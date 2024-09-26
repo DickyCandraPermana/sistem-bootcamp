@@ -5,6 +5,7 @@ import ContentKerjasama from '@/components/ContentKerjasama.vue'
 import LandingBlog from '@/components/LandingBlog.vue'
 import LandingAbout from '@/components/LandingAbout.vue'
 import LandingCeritaSukses from '@/components/LandingCeritaSukses.vue'
+import LandingJoinus from './components/LandingJoinus.vue'
 
 </script>
 
@@ -16,5 +17,6 @@ import LandingCeritaSukses from '@/components/LandingCeritaSukses.vue'
     <LandingBlog />
     <LandingAbout />
     <LandingCeritaSukses />
+    <LandingJoinus />
   </main>
 </template>
