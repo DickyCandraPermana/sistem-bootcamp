@@ -57,29 +57,29 @@ const events = ref([
 </script>
 
 <template>
-  <div class="w-full flex flex-col px-32 pt-16">
+  <div class="flex flex-col w-full px-32 pt-16">
     <div class="">
-      <h1 class="font-semibold font-montserrat text-3xl text-center mb-5">Berbagai Mitra Untuk Mendukung
+      <h1 class="mb-5 text-3xl font-semibold text-center font-montserrat">Berbagai Mitra Untuk Mendukung
         Ekosistem Digital SISTEM
       </h1>
-      <p class="font-normal font-inter text-slate-600 text-center text-sm -mt-4 mb-5 ">Cari berbagai macam event
+      <p class="mb-5 -mt-4 text-sm font-normal text-center font-inter text-slate-600 ">Cari berbagai macam event
         teknologi terbaik yang diadakan oleh komunitas dan di dukung oleh banyak perusahaan besar lainnya</p>
     </div>
 
-    <div class="w-full flex flex-row items-center justify-between gap-6">
+    <div class="flex flex-row items-center justify-between w-full gap-6">
       <div v-for="event in events" :key="event.id"
-        class="flex flex-col shadow-lg overflow-hidden shadow-slate-400 rounded-lg">
+        class="flex flex-col overflow-hidden rounded-lg shadow-lg shadow-slate-400">
         <div class="w-full">
           <img :src="event.url" :alt="event.title">
         </div>
         <div class="w-full p-5 text-slate-500">
           <div class="card__caption__title">
-            <h4 class="font-semibold font-inter text-lg leading-5 line-clamp-1 text-slate-800">{{ event.title }}</h4>
-            <p class="font-normal font-inter text-sm mb-5">{{ event.jenisKelas }} {{ event.durasi }}</p>
+            <h4 class="text-lg font-semibold leading-5 font-inter line-clamp-1 text-slate-800">{{ event.title }}</h4>
+            <p class="mb-5 text-sm font-normal font-inter">{{ event.jenisKelas }} {{ event.durasi }}</p>
           </div>
-          <div class="flex flex-row gap-3 justify-start items-center mb-4">
+          <div class="flex flex-row items-center justify-start gap-3 mb-4">
             <img :src="event.peminat.url" :alt="event.peminat.peminat">
-            <p class="font-inter text-md text-slate-800 font-semibold">{{ event.peminat.peminat }}</p>
+            <p class="font-semibold font-inter text-md text-slate-800">{{ event.peminat.peminat }}</p>
           </div>
 
           <a href="#" class="text-blue-600">Daftar Sekarang →</a>
