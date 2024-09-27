@@ -22,26 +22,26 @@ import mail_logo from '@/assets/img/mail.svg';
           Simatupang No.2, Jakarta Selatan</p>
       </div>
     </div>
-    <div class="flex justify-between w-full px-3 md:px-0 md:justify-around">
-      <div class="flex flex-col w-1/3 gap-7">
+    <div class="flex justify-between w-full md:px-0 md:justify-around">
+      <div class="flex flex-col w-1/3 gap-4 md:gap-7">
         <h5 class="text-xl font-semibold leading-relaxed text-slate-200 font-inter">Bootcamp</h5>
-        <ul class="flex flex-col gap-5 font-inter text-slate-400">
+        <ul class="flex flex-col gap-2 md:gap-5 font-inter text-slate-400">
           <li><a href="#">Devops</a></li>
           <li><a href="#">Quality Assurance</a></li>
           <li><a href="#">Full Stack Developer</a></li>
           <li><a href="#">Project Manager</a></li>
         </ul>
       </div>
-      <div class="flex flex-col w-1/3 gap-7">
+      <div class="flex flex-col w-1/3 gap-4 md:gap-7">
         <h5 class="text-xl font-semibold leading-relaxed text-slate-200 font-inter">SISTEM</h5>
-        <ul class="flex flex-col gap-5 font-inter text-slate-400">
+        <ul class="flex flex-col gap-2 md:gap-5 font-inter text-slate-400">
           <li><a href="#">Tentang Kami</a></li>
           <li><a href="#">Events</a></li>
           <li><a href="#">FAQ</a></li>
         </ul>
       </div>
     </div>
-    <div class="flex flex-col w-full md:w-1/5 gap-7">
+    <div class="flex flex-col w-full gap-4 mg:gap-7 md:w-1/5">
       <h5 class="text-xl font-semibold leading-relaxed text-white font-inter">Ikuti kami</h5>
       <div class="flex items-center justify-center w-8 h-8 p-1 border-2 border-blue-900 rounded-md">
         <img :src="instagram" alt="Instagram Logo" class="size-[80%] fill-white">
