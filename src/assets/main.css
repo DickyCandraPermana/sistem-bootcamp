@@ -7,6 +7,21 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  overflow: auto;
+  /* Enable scrolling */
+
+  /* For Chrome, Safari, and other WebKit browsers */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, and Opera */
+}
 
 .font-inter {
   font-family: 'Inter', sans-serif;
