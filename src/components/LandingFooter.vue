@@ -7,10 +7,10 @@ import mail_logo from '@/assets/img/mail.svg';
 </script>
 
 <template>
-  <footer class="flex items-start justify-between w-full px-32 py-16 bg-blue-950">
-    <div class="flex flex-col w-1/3 gap-8">
-      <img :src="logo" alt="wtf" class="w-1/2 fill-white">
-
+  <footer
+    class="flex flex-col items-start justify-between w-full gap-8 px-5 py-5 md:gap-0 md:flex-row md:px-32 md:py-16 bg-blue-950">
+    <div class="flex flex-col w-full gap-5 md:gap-8 md:w-1/3">
+      <img :src="logo" alt="wtf" class="w-1/4 md:w-1/2 fill-white">
       <div class="address">
         <h5 class="text-xl font-semibold leading-relaxed font-inter text-slate-300">Jogja Office</h5>
         <p class="text-base font-normal leading-relaxed font-inter text-slate-400">Jl. Kresna. Gamping kidul,
@@ -22,24 +22,26 @@ import mail_logo from '@/assets/img/mail.svg';
           Simatupang No.2, Jakarta Selatan</p>
       </div>
     </div>
-    <div class="flex flex-col w-1/5 gap-7">
-      <h5 class="text-xl font-semibold leading-relaxed text-white font-inter">Bootcamp</h5>
-      <ul class="flex flex-col gap-5 font-inter text-slate-400">
-        <li><a href="#">Devops</a></li>
-        <li><a href="#">Quality Assurance</a></li>
-        <li><a href="#">Full Stack Developer</a></li>
-        <li><a href="#">Project Manager</a></li>
-      </ul>
+    <div class="flex justify-between w-full px-3 md:px-0 md:justify-around">
+      <div class="flex flex-col w-1/3 gap-7">
+        <h5 class="text-xl font-semibold leading-relaxed text-slate-200 font-inter">Bootcamp</h5>
+        <ul class="flex flex-col gap-5 font-inter text-slate-400">
+          <li><a href="#">Devops</a></li>
+          <li><a href="#">Quality Assurance</a></li>
+          <li><a href="#">Full Stack Developer</a></li>
+          <li><a href="#">Project Manager</a></li>
+        </ul>
+      </div>
+      <div class="flex flex-col w-1/3 gap-7">
+        <h5 class="text-xl font-semibold leading-relaxed text-slate-200 font-inter">SISTEM</h5>
+        <ul class="flex flex-col gap-5 font-inter text-slate-400">
+          <li><a href="#">Tentang Kami</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="flex flex-col w-1/7 gap-7">
-      <h5 class="text-xl font-semibold leading-relaxed text-white font-inter">SISTEM</h5>
-      <ul class="flex flex-col gap-5 font-inter text-slate-400">
-        <li><a href="#">Tentang Kami</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">FAQ</a></li>
-      </ul>
-    </div>
-    <div class="flex flex-col w-1/5 gap-7">
+    <div class="flex flex-col w-full md:w-1/5 gap-7">
       <h5 class="text-xl font-semibold leading-relaxed text-white font-inter">Ikuti kami</h5>
       <div class="flex items-center justify-center w-8 h-8 p-1 border-2 border-blue-900 rounded-md">
         <img :src="instagram" alt="Instagram Logo" class="size-[80%] fill-white">

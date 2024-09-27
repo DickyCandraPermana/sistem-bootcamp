@@ -19,8 +19,8 @@ const partners = ref([
 </script>
 
 <template>
-  <div class="flex flex-col items-center justify-between w-full px-32 pt-5">
-    <h1 class="mb-5 text-3xl font-semibold leading-relaxed text-center font-montserrat">
+  <div class="flex flex-col items-center justify-between w-full px-5 py-5 md:px-32 md:py-16">
+    <h1 class="mb-5 text-xl font-semibold text-center md:leading-relaxed font-montserrat md:text-3xl">
       Berbagai Mitra Untuk Mendukung Ekosistem Digital SISTEM
     </h1>
     <div class="flex flex-row items-center justify-between w-full overflow-visible">

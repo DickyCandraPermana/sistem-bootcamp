@@ -24,19 +24,22 @@ const services = ref([
 </script>
 
 <template>
-  <header class="flex w-full px-32 py-16">
+  <header class="flex flex-col-reverse w-full px-5 py-5 md:flex-row md:px-32 md:py-16">
     <!-- Bagian Kiri -->
-    <div class="flex flex-col w-1/2 gap-8">
+    <div class="flex flex-col w-full gap-4 md:gap-8 md:w-1/2">
       <h2 class="text-base font-semibold text-yellow-300 uppercase font-inter">career accelerate</h2>
-      <h1 class="text-4xl font-semibold leading-normal font-inter">Meningkatkan Karir Anda di SISTEM Bootcamp</h1>
-      <p class="text-sm font-normal leading-relaxed font-inter text-slate-800">Pelajari dari ahli Teknik Perangkat Lunak
+      <h1 class="text-3xl font-semibold leading-normal md:text-4xl font-inter">Meningkatkan Karir Anda di SISTEM
+        Bootcamp</h1>
+      <p class="text-xs font-normal leading-relaxed md:text-sm font-inter text-slate-800">Pelajari dari ahli Teknik
+        Perangkat Lunak
         yang berpengalaman di SEA dan mempercepat karir Anda sebagai Software Engineer.</p>
-      <div class="flex flex-row items-center justify-between w-full">
-        <div class="flex flex-row items-center justify-between" v-for="service in services" :key="service">
-          <div class="p-2 rounded-lg icon bg-slate-200">
-            <img :src="service.logo" :alt="service.title">
+      <div class="flex flex-col items-start justify-between w-full gap-4 md:gap-0 md:items-center md:flex-row">
+        <div class="flex flex-row items-center justify-start w-full md:justify-between md:w-1/3"
+          v-for="service in services" :key="service.title">
+          <div class="flex items-center justify-center p-2 rounded-lg icon bg-slate-200">
+            <img :src="service.logo" :alt="service.title" class="w-[80%]">
           </div>
-          <h4 class="px-3 font-semibold leading-5 font-poppins text-md">{{ service.title }}</h4>
+          <h4 class="px-3 font-semibold leading-5 text-left font-poppins text-md">{{ service.title }}</h4>
         </div>
       </div>
       <button
@@ -47,7 +50,7 @@ const services = ref([
     <!-- Bagian Kiri end -->
 
     <!-- Bagian Kanan -->
-    <div class="flex items-center justify-end w-1/2">
+    <div class="flex items-center justify-end w-full mb-10 md:mb-0 md:w-1/2">
       <div class="grid grid-cols-3 grid-rows-3">
         <div class="col-span-1 row-span-3 p-2 overflow-hidden rounded-lg">
           <img :src="green" alt="figure" class="mb-2">
@@ -58,9 +61,9 @@ const services = ref([
           <img :src="orange" alt="figure">
         </div>
         <div class="col-span-1 row-span-3 p-2 my-auto overflow-hidden rounded-lg">
-          <img :src="Star" alt="">
+          <img :src="Star" alt="" class="ml-6">
           <img :src="yellow" alt="figure" class="my-3">
-          <img :src="Star" alt="">
+          <img :src="Star" alt="" class="ml-2">
         </div>
       </div>
     </div>
