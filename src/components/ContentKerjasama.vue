@@ -19,14 +19,16 @@ const partners = ref([
 </script>
 
 <template>
-  <div class="flex flex-col items-center justify-between w-full px-5 py-5 md:px-32 md:py-16">
+  <div class="flex flex-col items-center justify-between w-full px-5 py-5 md:px-32 md:py-5">
     <h1 class="mb-5 text-xl font-semibold text-center md:leading-relaxed font-montserrat md:text-3xl">
       Berbagai Mitra Untuk Mendukung Ekosistem Digital SISTEM
     </h1>
-    <div class="flex flex-row items-center justify-between w-full overflow-visible">
-      <div class="block p-4" v-for="partner in partners" :key="partner.id">
-        <img :src="partner.url" alt="Partner Logo" />
+    <marquee behavior="scroll" direction="left">
+      <div class="flex flex-row items-center justify-between w-full gap-5 overflow-visible md:gap-10">
+        <div class="block w-56 p-4 md:w-56" v-for="partner in partners" :key="partner.id">
+          <img :src="partner.url" alt="Partner Logo" class="w-full" />
+        </div>
       </div>
-    </div>
+    </marquee>
   </div>
 </template>

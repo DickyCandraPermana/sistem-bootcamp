@@ -62,15 +62,15 @@ const events = ref([
       <h1 class="text-xl font-semibold text-center md:text-3xl mb-7 font-montserrat">Pilih Pengalaman Event Terbaik
       </h1>
       <p class="mb-5 -mt-4 text-xs font-normal text-center md:text-sm font-inter text-slate-500 ">Cari berbagai macam
-        event
-        teknologi terbaik yang diadakan oleh komunitas dan di dukung oleh banyak perusahaan besar lainnya</p>
+        event teknologi terbaik yang diadakan oleh komunitas dan di dukung oleh banyak perusahaan besar lainnya</p>
     </div>
 
     <div class="grid items-center justify-between w-full grid-cols-2 gap-4 md:gap-6 md:flex md:flex-row">
       <div v-for="event in events" :key="event.id"
-        class="flex flex-col overflow-hidden rounded-lg shadow-lg shadow-slate-400">
+        class="flex flex-col overflow-hidden transition-all duration-500 rounded-lg shadow-lg shadow-slate-400 hover:-translate-y-3 group">
         <div class="w-full">
-          <img :src="event.url" :alt="event.title">
+          <img :src="event.url" :alt="event.title"
+            class="object-cover overflow-hidden transition-all duration-500 group-hover:scale-110">
         </div>
         <div class="w-full p-5 text-slate-500">
           <div class="">
@@ -82,7 +82,7 @@ const events = ref([
             <p class="mb-5 text-xs font-normal md:text-sm font-inter">{{ event.jenisKelas }} {{ event.durasi }}</p>
           </div>
           <div class="flex flex-row items-center justify-start gap-2 mb-4 md:gap-3">
-            <img :src="event.peminat.url" :alt="event.peminat.peminat" class="w-1/2">
+            <img :src="event.peminat.url" :alt="event.peminat.peminat" class="w-1/2 md:w-14">
             <p class="text-xs font-semibold md:text-sm font-inter md:text-md text-slate-800">{{ event.peminat.peminat }}
             </p>
           </div>

@@ -40,9 +40,10 @@ const stories = ref([
     </div>
 
     <div class="flex flex-col items-center justify-between w-full gap-5 mt-5 md:flex-row">
-      <div v-for="story in stories" :key="story.id" class="p-8 pb-10 bg-white rounded-md shadow-md shadow-slate-400">
+      <div v-for="story in stories" :key="story.id"
+        class="p-8 pb-10 transition-all duration-500 bg-white rounded-md shadow-md group hover:-translate-y-3 shadow-slate-400">
         <div class="flex flex-row items-center justify-start gap-3 mb-8">
-          <img :src="story.img" :alt="story.name" class="size-16">
+          <img :src="story.img" :alt="story.name" class="transition-all duration-500 size-16 group-hover:scale-125">
           <div class="flex flex-col gap-1">
             <h3 class="text-lg font-semibold">{{ story.name }}</h3>
             <p class="text-xs font-normal text-slate-500 font-inter">{{ story.job }}</p>

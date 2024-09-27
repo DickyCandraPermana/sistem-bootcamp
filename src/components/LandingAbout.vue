@@ -10,7 +10,7 @@
       <div class="w-1/4 bg-blue-500"></div>
     </div>
     <div class="w-full flex flex-col md:flex-row items-start justify-around gap-8 bg-[#F4F0F8] py-20 px-14">
-      <div class="flex flex-col w-full gap-3 text-center md:left md:w-1/2">
+      <div class="flex flex-col w-full gap-3 text-center md:text-left md:w-1/2">
         <h3 class="font-semibold text-slate-800 font-inter text-md">TENTANG KAMI</h3>
         <h2 class="text-lg md:text-[28px] leading-snug font-semibold font-montserrat">Mulai Karir Sukses Anda di
           Teknik
@@ -18,7 +18,7 @@
         <p class="text-sm leading-relaxed text-slate-400 font-inter">Lorem ipsum dolor sit amet, consectetur adipiscing
           elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
-      <div class="flex flex-col w-full gap-3 text-center md:left md:w-1/2">
+      <div class="flex flex-col w-full gap-3 text-center md:text-left md:w-1/2">
         <h3 class="font-semibold text-slate-800 font-inter text-md">VISI KAMI</h3>
         <h2 class="text-lg text-[22px] leading-normal font-semibold font-montserrat">Membuat Peradaban Teknologi yang
           Terbaik untuk seluruh dunia</h2>

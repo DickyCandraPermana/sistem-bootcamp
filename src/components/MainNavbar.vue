@@ -33,14 +33,18 @@ const toggleMenu = () => {
   </nav>
   <div v-if="isOpen" class="absolute z-10 w-full bg-slate-700">
     <ul>
-      <li class="px-4 py-2 text-base font-normal leading-relaxed border-b text-slate-300 border-slate-600 font-inter"><a
-          href="">Home</a></li>
-      <li class="px-4 py-2 text-base font-normal leading-relaxed border-b text-slate-300 border-slate-600 font-inter"><a
-          href="">Blog</a></li>
-      <li class="px-4 py-2 text-base font-normal leading-relaxed border-b text-slate-300 border-slate-600 font-inter"><a
-          href="">About</a></li>
-      <li class="px-4 py-2 text-base font-normal leading-relaxed border-b text-slate-300 border-slate-600 font-inter"><a
-          href="">Contact Us</a></li>
+      <li
+        class="px-4 py-2 text-base font-normal leading-relaxed border-b text-slate-300 border-slate-600 font-inter hover:bg-slate-300 hover:text-slate-700">
+        <a href="">Home</a></li>
+      <li
+        class="px-4 py-2 text-base font-normal leading-relaxed border-b text-slate-300 border-slate-600 font-inter hover:bg-slate-300 hover:text-slate-700">
+        <a href="">Blog</a></li>
+      <li
+        class="px-4 py-2 text-base font-normal leading-relaxed border-b text-slate-300 border-slate-600 font-inter hover:bg-slate-300 hover:text-slate-700">
+        <a href="">About</a></li>
+      <li
+        class="px-4 py-2 text-base font-normal leading-relaxed border-b text-slate-300 border-slate-600 font-inter hover:bg-slate-300 hover:text-slate-700">
+        <a href="">Contact Us</a></li>
     </ul>
   </div>
   <div v-if="isOpen" class="absolute opacity-50 w-svw h-[100vh] bg-slate-800"></div>
